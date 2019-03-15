@@ -1,6 +1,8 @@
-# Webpack Docs
+# Webpack
 
-# Installation
+Documentation, guides and Node interface.
+
+## Installation
 
 To install webpack and webpack-cli locally run the following commands:
 
