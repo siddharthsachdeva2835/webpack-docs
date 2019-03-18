@@ -79,9 +79,9 @@ module: {
 }
 ```
 
-## loading data
+## Loading Data
 
-Another useful asset that can be loaded is data, like JSON files, CSVs, TSVs, and XML. Support for JSON is actually built-in, similar to NodeJS, meaning import Data from './data.json' will work by default. To import CSVs, TSVs, and XML you could use the csv-loader and xml-loader. Use the following command:
+Another useful asset that can be loaded is data, like **JSON files, CSVs, TSVs, and XML**. Support for JSON is actually built-in, similar to NodeJS, meaning **import Data from './data.json'** will work by default. To import CSVs, TSVs, and XML you could use the csv-loader and xml-loader. Use the following command:
 
 ```bash
 npm install --save-dev csv-loader xml-loader
@@ -109,4 +109,4 @@ module: {
 
 ```
 
-Import **data.xml** file to index.js and log the Data on the console. Re-run the npm run build command and open index.html. If you look at the console in your developer tools, you should be able to see your imported data being logged to the console!
+Import **data.xml** file to index.js and log the Data on the console. Re-run the **npm run build** command and open **index.html**. If you look at the console in your developer tools, you should be able to see your imported data being logged to the console!
