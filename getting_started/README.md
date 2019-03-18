@@ -38,7 +38,7 @@ npx webpack
 This will take the script at src/index.js as an entry point, and will generate dist/main.js as the output.
 Now open dist/index.html in the browser to check if the code is running properly.
 
-## Tranpiling
+## Transpiling
 
 The import and export statements are still not supported in many browsers, but webpack supports them by transpiling the code.
 
