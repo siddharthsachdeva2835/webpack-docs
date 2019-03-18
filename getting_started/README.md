@@ -65,7 +65,7 @@ Now, run the following command to build using our new configuration file:
 npx webpack --config webpack.config.js
 ```
 
-
+Note: If a webpack.config.js is present, the webpack command picks it up by default. We can directly run **npx webpack** command or we can add **"build": "webpack"** to srcipts inside package.json file and run **npm run build**.
 
 
 
