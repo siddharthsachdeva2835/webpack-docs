@@ -1,12 +1,17 @@
 import './style.css';
+import MyImage from './Webpack.png';
 
 function component() {
-    let element = document.createElement('div');
-  
-    element.innerHTML = 'Hello world';
-    element.classList.add('hello');
+  let element = document.createElement('div');
 
-    return element;
-  }
+  element.innerHTML = 'Hello world';
+  element.classList.add('hello');
   
-  document.body.appendChild(component());
+  const newImage = new Image();
+  newImage.src = MyImage;
+  element.append(newImage);
+
+  return element;
+}
+  
+document.body.appendChild(component());
