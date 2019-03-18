@@ -63,9 +63,50 @@ A similar process will occur for **url('./my-image.png')** within your CSS. The 
 
 ## Loading Fonts
 
+The file and url loaders will take any file you load through them and output it to your build directory. This means we can use them for any kind of file, including fonts. Let's add file-loader rule to **webpack.config.js** to handle font files:
 
+```bash
+module: {
+    rules: 
+    [
+        {
+            test: /\.(woff|woff2|eot|ttf|otf)$/,
+            use: [
+                'file-loader'
+            ]
+       }
+    ]
+}
+```
 
+## loading data
 
+Another useful asset that can be loaded is data, like JSON files, CSVs, TSVs, and XML. Support for JSON is actually built-in, similar to NodeJS, meaning import Data from './data.json' will work by default. To import CSVs, TSVs, and XML you could use the csv-loader and xml-loader. Use the following command:
 
+```bash
+npm install --save-dev csv-loader xml-loader
+```
+Then add the csv-loader and xml-loader to the module configuration in **webpack.config.js**:
 
+```bash
+module: {
+    rules: 
+    [
+        {
+            test: /\.(csv|tsv)$/,
+            use: [
+                'csv-loader'
+            ]
+        },
+        {
+            test: /\.xml$/,
+            use: [
+                'xml-loader'
+            ]
+        }
+    ]
+}
 
+```
+
+Import **data.xml** file to index.js and log the Data on the console. Re-run the npm run build command and open index.html. If you look at the console in your developer tools, you should be able to see your imported data being logged to the console!

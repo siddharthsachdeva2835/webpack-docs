@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('./font.ttf');
+    font-weight: 600;
+    font-size: 50px;
+}
+
 .hello {
-    color: orangered; 
+    color: orangered;
     background: url('./Webpack.png');
+    font-family: myFont;
 }
