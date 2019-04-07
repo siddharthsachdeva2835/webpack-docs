@@ -1,1 +1,3 @@
-export const name = 'world'
+const name = 'world'
+
+export default name;
